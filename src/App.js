@@ -1,6 +1,8 @@
 import './App.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import Footer from './components/footer/Footer';
 import Navbars from './components/navbar/Navbar';
+import SearchBar from './components/searchbar/SearchBar';
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       <Navbars />
       <div className='page-container'>
         <div className='content-wrap'>
+          <SearchBar />
           <h1>Hello World!</h1>
         </div>
         <Footer />
