@@ -13,7 +13,6 @@ function App() {
         <div className='content-wrap'>
           <SearchBar />
           <BlogPosts />
-          <h1>Hello World!</h1>
         </div>
         <Footer />
       </div>
