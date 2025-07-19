@@ -6,6 +6,7 @@ import SearchBar from './components/searchbar/SearchBar';
 import BlogPosts from './components/blog-posts/BlogPosts';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import BlogDetails from './components/blog-posts/BlogDetails';
+import MyBlog from './pages/MyBlog';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                 }
               />
               <Route path="/blog/:id" element={<BlogDetails />} />
+              <Route path="my-blogs" element={<MyBlog />} />
             </Routes>
           </div>
           <Footer />
