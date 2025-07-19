@@ -3,7 +3,8 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import './blogpost.css'
 import { useState } from 'react';
 import Pagination from 'react-bootstrap/Pagination';
-import Plane from '../../images/plane.jpg'
+import Plane from '../../images/plane.jpg';
+import { Link } from 'react-router-dom';
 
 const blogData = Array.from({ length: 25 }, (_, i) => ({
   id: i + 1,
@@ -45,7 +46,7 @@ function BlogPosts() {
                     <ListGroup.Item>Sample item 3</ListGroup.Item>
                     </ListGroup>
                     <Card.Body>
-                    <Card.Link href="#">Read More</Card.Link>
+                    <Link to={`/blog/${blog.id}`} className="card-link">Read more</Link>
                     </Card.Body>
                 </Card>
                 ))}
