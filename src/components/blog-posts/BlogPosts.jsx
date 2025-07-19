@@ -3,6 +3,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import './blogpost.css'
 import { useState } from 'react';
 import Pagination from 'react-bootstrap/Pagination';
+import Plane from '../../images/plane.jpg'
 
 const blogData = Array.from({ length: 25 }, (_, i) => ({
   id: i + 1,
@@ -32,7 +33,7 @@ function BlogPosts() {
                 <Card key={blog.id} style={{ width: '18rem' }}>
                     <Card.Img
                     variant="top"
-                    src="https://via.placeholder.com/286x180.png?text=Image+Cap"
+                    src={Plane}
                     />
                     <Card.Body>
                     <Card.Title>{blog.title}</Card.Title>
